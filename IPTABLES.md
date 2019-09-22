@@ -159,3 +159,44 @@ ACCEPT dentro de una cadena, tambien estara ACCEPT en todas las cadenas
 del superconjunto y no atravesara ninguna cadena mas de ese superconjunto.
 Sin embargo, tenga en cuenta que el paquete continuara atravesando todas
 las demas cadenas en otras tablas de la manera descrita.
+
+
+### Enumerar reglas por especificaciones
+~~~
+# iptables -S
+~~~
+
+### Enumerar una cadena específica
+~~~
+# iptables -S OUTPUT
+~~~
+
+### Enumerar reglas como tablas
+~~~
+# iptables -L
+~~~
+
+### Eliminar una sola cadena
+~~~
+# iptables -F INPUT
+~~~
+
+### Eliminar todas las cadenas
+~~~
+# iptables -F
+~~~
+
+### Eliminar todas las reglas, borrar todas las cadenas y aceptar todas las conexiones
+~~~
+# iptables -P INPUT ACCEPT
+# iptables -P FORWARD ACCEPT
+# iptables -P OUTPUT ACCEPT
+~~~
+
+~~~
+NOTA: El caracter de suma +
+Un caracter tipo comodín utilizado para coincidir todas las interfaces con 
+una cadena de caracteres especificada. Por ejemplo, el parámetro -i eth+ 
+aplicará esta regla a cualquier interfaz Ethernet pero excluirá cualquier 
+otra interfaz, tal como, ppp0.
+~~~

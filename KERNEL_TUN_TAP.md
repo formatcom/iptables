@@ -12,3 +12,39 @@ Para IP Packets -> TUN.
 Para Ethernet Frame -> TAP.
 
 ![packet](https://www.laneye.com/network/ethernet-network-packet-holding-an-ip-packet.gif)
+
+
+### Listar todas las interfaz tun/tap
+~~~
+$ ip tuntap list
+~~~
+
+### Crear interfaz modo tap
+~~~
+# ip tuntap add NAME mode tap
+~~~
+
+### Eliminar interfaz modo tap
+~~~
+# ip tuntap del NAME modo tap
+~~~
+
+### Listar todas las interfaces
+~~~
+$ ip a
+~~~
+
+### Listar todas las interfaces levantadas
+~~~
+ifconfig
+~~~
+
+### Levantar interfaz
+~~~
+# ip link set NAME up
+~~~
+
+### Bajar interfaz
+~~~
+# ip link set NAME down
+~~~
