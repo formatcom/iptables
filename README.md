@@ -1,6 +1,7 @@
 # IPTABLES
 
 REF: https://wiki.archlinux.org/index.php/Iptables_(Espa%C3%B1ol)
+
 iptables se usa para inspeccionar, modificar, reenviar, redirigir
 y/o eliminar paquetes de red de IP. El codigo para filtrar paquetes
 de IP ya esta integrado en el kernel y esta organizado en una
