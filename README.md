@@ -1,6 +1,5 @@
 # IPTABLES
 
-~~~
 REF: https://wiki.archlinux.org/index.php/Iptables_(Espa%C3%B1ol)
 iptables se usa para inspeccionar, modificar, reenviar, redirigir
 y/o eliminar paquetes de red de IP. El codigo para filtrar paquetes
@@ -16,6 +15,5 @@ La mayoria de los usuarios nuevos consideran que las complejidades del
 enrutamiento IP de linux son bastantes desalentadoras, pero, en la
 practica, los casos de uso mas comunes (NAT y/o cortafuegos basicos
 de internet) son considerablemente menos complejos.
-~~~
 
 ![tables traverse](https://www.frozentux.net/iptables-tutorial/images/tables_traverse.jpg)
