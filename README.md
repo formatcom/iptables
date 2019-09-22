@@ -73,3 +73,15 @@ Decisión de enrutamiento                                          |
                                XXX    Red     XXX
                                XXXXXXXXXXXXXXXXXX
 ~~~
+
+## Tablas
+
+iptables cuenta con cinco tablas:
+-------------------------------
+1. raw filtra los paquetes antes que cualquier otra tabla. Se utiliza
+principalmente para configurar exenciones de seguimiento de conexines
+en combinacion con el objetivo NOTRACK.
+2. filter es la tabla por defecto (si no se pasa la opcion -t).
+3. nat se utiliza para la traduccion de direcciones de red (por
+ejemplo, la redireccion de puertos). Debido a las limitaciones en
+iptables, el filtrado no se debe hacer aqui.
