@@ -21,12 +21,12 @@ $ ip tuntap list
 
 ### Crear interfaz modo tap
 ~~~
-# ip tuntap add NAME mode tap
+# ip tuntap add <name> mode tap
 ~~~
 
 ### Eliminar interfaz modo tap
 ~~~
-# ip tuntap del NAME modo tap
+# ip tuntap del <name> modo tap
 ~~~
 
 ### Listar todas las interfaces
@@ -41,10 +41,10 @@ ifconfig
 
 ### Levantar interfaz
 ~~~
-# ip link set NAME up
+# ip link set <name> up
 ~~~
 
 ### Bajar interfaz
 ~~~
-# ip link set NAME down
+# ip link set <name> down
 ~~~
